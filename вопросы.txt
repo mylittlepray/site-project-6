@@ -1,0 +1,16 @@
+1. Какие методы JavaScript используются для работы с DOM?
+Ответ: getElementById, querySelector, querySelectorAll, createElement, appendChild,
+innerHTML, textContent, classList, style, onclick, addEventListener
+
+2. Как создать массив объектов в JavaScript?
+Ответ: questions = [{question: "...", answers: ["...", "..."], correct: 0}, ...].
+
+3. Как добавить обработчик событий на кнопку в JavaScript?
+Ответ: buttonElement.onclick = () => { код }; или nextButton.addEventListener('click', () => { код });.
+
+4. В чем разница между let, const и var?
+Ответ: В коде используются const для неизменяемых переменных (DOM-элементы). 
+А let для переменных, которые могут меняться (currentQuestion, score).
+
+5. Как можно динамически добавлять элементы на страницу с помощью JavaScript?
+Ответ: document.createElement('button'), answersContainer.appendChild(button), answersContainer.innerHTML = ""

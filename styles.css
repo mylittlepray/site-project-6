@@ -1,0 +1,116 @@
+:root {
+  --bg-color: #ffe7bf;
+  --primary-color: #ffd188;
+  --secondary-color: rgba(250, 250, 250, 1);
+  --text-color: #6b4303;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+.container {
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+#question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+.answer {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.answer:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.answer.correct {
+  background-color: #4caf50;
+  color: white;
+  position: relative;
+}
+
+.answer.correct::after {
+  content: "✓";
+  font-size: 1.3em;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.answer.wrong {
+  background-color: #f44336;
+  color: white;
+  position: relative;
+}
+
+.answer.wrong::after {
+  content: "✕";
+  font-size: 1.3em;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+#next {
+  margin-top: 20px;
+}
+
+#restart {
+  margin-top: 10px;
+}
